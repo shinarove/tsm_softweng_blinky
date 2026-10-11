@@ -6,12 +6,11 @@
 
 #include "gcov_test.h"
 #include <stdio.h>
-#include "sample.h"
 #pragma GCC optimize("O3,inline")
 
 static int Calc(int i, int j)
 {
-    int res;
+    int res = 0;
     if (i == 0)
     {
         res = i + 1;

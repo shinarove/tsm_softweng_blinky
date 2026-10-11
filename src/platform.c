@@ -33,6 +33,7 @@
 #endif
 #if PL_CONFIG_USE_UNIT_TESTS
   #include "tests/tests.h"
+  #include "gcov_test.h"
 #endif
 #if PL_CONFIG_USE_RTT
   #include "McuRTT.h"
@@ -110,6 +111,10 @@ void PL_Init(void) {
 #endif
 #if PL_CONFIG_USE_UNIT_TESTS
   Tests_Init();
+  gcov_test(-1);
+  gcov_test(0);
+  gcov_test(1);
+  gcov_test(5);
 #endif
 #if McuSemihost_CONFIG_IS_ENABLED
   McuSemiHost_Init();
