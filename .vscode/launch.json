@@ -8,8 +8,8 @@
             "servertype": "jlink",
             "serverpath": "${env:PICO_JLINK_PATH}/JLinkGDBServerCL", // running on Windows Host
             //"serverpath": "JLinkGDBServerCLExe", // Linux, inside container with host running JLinkRemoteServerCL, or for Linux host
-            //"serialNumber": "801048148", // connection by serial number
-            //"ipAddress": "tunnel:801048148", // connection through tunnel
+            "serialNumber": "801047521", // connection by serial number
+            //"ipAddress": "tunnel:801047521", // connection through tunnel
             //"ipAddress": "192.168.1.123", // connection to IP based (hardware) debug probe, e.g. J-Link Trace
             //"ipAddress": "192.168.65.254", // host.docker.internal address, JLinkRemoteServerCL runs on host
             "cwd": "${workspaceFolder}",
